@@ -10,4 +10,8 @@ class ThanksMailer < ApplicationMailer
     mail to: user.email, subject: "Welcome to Bookers!"
   end
 
+    def notify_user
+        default to: -> { User.pluck(:email) }
+        mail(subject: "everyday Bookers!yay!")
+    end
 end

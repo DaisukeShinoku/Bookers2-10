@@ -90,4 +90,7 @@ gem 'jp_prefecture', '~> 0.10.0'
 # gem 'geocoder', '~> 1.6', '>= 1.6.3'
 
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+
 gem 'pry-byebug'
+
+gem 'whenever', '~> 1.0', require: false
