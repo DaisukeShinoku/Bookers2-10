@@ -9,7 +9,7 @@
 env :PATH, ENV['PATH']
 # ログファイルの出力先
 set :output, 'log/cron.log'
-# ジョブの実行環境の指定
+# ジョブの実行環境の指定 あとで開発に直す！
 set :environment, :production
 #
 # every 2.hours do
