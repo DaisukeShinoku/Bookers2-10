@@ -21,11 +21,13 @@ set :environment, :development
 # every 4.days do
 #   runner "AnotherModel.prune_old_records"
 # end
-every 5.minutes do ##テストのためここを追加
+every 1.minutes do ##テストのためここを追加
 # every 1.days, at: '9:00 am' do
 
 # Rails内のメソッド実行
   runner "ThanksMailer.notify_user"
+  runner "DailyMailer.daily"
 end
+
 
 # Learn more: http://github.com/javan/whenever
